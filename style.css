@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+body,
+html {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    height: 100%;
+}
+
+.game-box {
+    background-color: silver;
+}
+
+.answer-item {
+    background: black;
+    width: 90%;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+#btn-start,
+#btnScore {
+    border: none;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
+    background: black;
+    font: bold 40px;
+    color: #fff;
+}

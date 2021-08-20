@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a class="nav-link active text-decoration-underline" aria-current="page" href="./highscore.html">View Scores</a>
+    </nav>
+
+    <div class="container d-flex justify-content-center mt-5">
+
+        <div class="game-box col-lg-8 p-4">
+            <div class="row pb-4 justify-content-center" id="cus-title">
+                <div class="col-lg-4">
+                    <h2 class="fw-bold">JavaScript Fundamentals</h2>
+                </div>
+                <hr>
+                <div class="col-lg-4"></div>
+
+                <div class="col-lg-4">
+                    <h4 class="float-end text-primary d-none text-decoration-underline text-danger" id="timecounter">Time: :<span id="timer">50</span></h4>
+
+                </div>
+            </div>
+            <div class="quiz-questions d-none" id="quiz-questions">
+                <h2 class="text-info text-center fw-bolder text-dark" id="title-item"></h2>
+                <div class="answers mt-5 mb-5" id="question-answers">
+                </div>
+                <h1 id="alert"></h1>
+
+            </div>
+            <div class="btnstart d-flex  flex-column justify-content-center mt-8 mb-10">
+                <p id="info">Please select the correct answers for the following questions. Each wrong answer will take 10 seconds off the clock!
+                </p>
+                <button class="btn btn-dark btn-lg" id="btn-start">Start Quiz</button>
+
+            </div>
+
+            <div class=" input-group mb-3 d-none" id="addscore">
+                <h5 class="d-block"><span id="score"></span></h5>
+                <input type="text" class="form-control" placeholder="Enter your initials:" id="inputScore" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="input-group-text btn btn-primary p-3" id="btnScore">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
