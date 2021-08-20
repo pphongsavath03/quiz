@@ -1,3 +1,5 @@
+// score keeping + clearing + going back to quiz home
+
 var storedScores = JSON.parse(localStorage.getItem("userData"));
 var highScoresArea = document.querySelector("#highScoresList");
 var backBtn = document.querySelector("#backButton");
