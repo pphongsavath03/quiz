@@ -18,28 +18,28 @@ var allScores = [];
 
 var storedScores = JSON.parse(localStorage.getItem("userData"));
 var questions = [{
-        title: "Commonly used data type Do Not include:",
-        choices: ["strings", "booleance", "alerts", "numbers"],
+        title: "Question 1:  Commonly used data type Do Not include:",
+        choices: ["A: strings", "B: booleance", "C: alerts", "D: numbers"],
         answer: "alerts"
     },
     {
-        title: "The condition in an if/else statement is enclosed within:",
-        choices: ["quotes", "Curly brackets", "parentheses", "square brackets"],
+        title: "Question 2:  The condition in an if/else statement is enclosed within:",
+        choices: ["A: quotes", "B: curly brackets", "C: parentheses", "D: square brackets"],
         answer: "parentheses"
     },
     {
-        title: "Arrays in JavaScript can be used to store:",
-        choices: ["numbers and strings", "others Arrays", "booleances", "all of the above"],
+        title: "Question 3:  Arrays in JavaScript can be used to store:",
+        choices: ["A: numbers and strings", "B: others Arrays", "C: booleances", "D: all of the above"],
         answer: "all of the above"
     },
     {
-        title: "String values must be enclosed within _______ when being assigned to variables ",
-        choices: ["commas", "curly brackets", "quotes", "parentheses"],
+        title: "Question 4:  String values must be enclosed within _______ when being assigned to variables. ",
+        choices: ["A: commas", "B: curly brackets", "C: quotes", "D: parentheses"],
         answer: "quotes"
     },
     {
-        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
-        choices: ["JavaScript", "terminal/bash", "alerts", "console.log"],
+        title: "Question 5:  A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["A: javaScript", "B: terminal/bash", "C: alerts", "D: console.log"],
         answer: "console.log"
     },
 ]
