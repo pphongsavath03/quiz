@@ -79,6 +79,8 @@ function gametime() {
 
 }
 
+//score keeping
+
 function scorePage(a, b) {
 
     var userData = {
@@ -128,7 +130,7 @@ function displaynextQuestion(e) {
 
 }
 
-
+// question response
 
 function correction(response) {
 
