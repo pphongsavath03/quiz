@@ -71,12 +71,16 @@ btnScore.addEventListener("click", function() {
 // Time Count down
 
 function gametime() {
-
-    var timeinterval = setInterval(function() {
+    timeInterval = 50;
+    var timeInterval = setInterval(function() {
         timer.innerText = count
         count--;
+        if (count === 0) {
+            quizQuestions.textContent = ("times up!!")
+            clearInterval(timeInterval)
+            endgame()
+        }
     }, 1000);
-
 }
 
 //score keeping
