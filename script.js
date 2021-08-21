@@ -20,27 +20,27 @@ var storedScores = JSON.parse(localStorage.getItem("userData"));
 var questions = [{
         title: "Question 1:  Commonly used data type Do Not include:",
         choices: ["A: strings", "B: booleance", "C: alerts", "D: numbers"],
-        answer: "alerts"
+        answer: "C: alerts"
     },
     {
         title: "Question 2:  The condition in an if/else statement is enclosed within:",
         choices: ["A: quotes", "B: curly brackets", "C: parentheses", "D: square brackets"],
-        answer: "parentheses"
+        answer: "C: parentheses"
     },
     {
         title: "Question 3:  Arrays in JavaScript can be used to store:",
         choices: ["A: numbers and strings", "B: others Arrays", "C: booleances", "D: all of the above"],
-        answer: "all of the above"
+        answer: "D: all of the above"
     },
     {
         title: "Question 4:  String values must be enclosed within _______ when being assigned to variables. ",
         choices: ["A: commas", "B: curly brackets", "C: quotes", "D: parentheses"],
-        answer: "quotes"
+        answer: "C: quotes"
     },
     {
         title: "Question 5:  A very useful tool used during development and debugging for printing content to the debugger is:",
         choices: ["A: javaScript", "B: terminal/bash", "C: alerts", "D: console.log"],
-        answer: "console.log"
+        answer: "D: console.log"
     },
 ]
 
@@ -75,7 +75,7 @@ function gametime() {
     var timeInterval = setInterval(function() {
         timer.innerText = count
         count--;
-        if (count === 0) {
+        if (count === -1) {
             quizQuestions.textContent = ("times up!!")
             clearInterval(timeInterval)
             endgame()
