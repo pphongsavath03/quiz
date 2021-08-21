@@ -39,7 +39,7 @@ var questions = [{
     },
     {
         title: "Question 5:  A very useful tool used during development and debugging for printing content to the debugger is:",
-        choices: ["A: javaScript", "B: terminal/bash", "C: alerts", "D: console"],
+        choices: ["A: javaScript", "B: terminal/bash", "C: alerts", "D: console.log"],
         answer: "D: console.log"
     },
 ]
