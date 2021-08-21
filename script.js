@@ -75,7 +75,7 @@ function gametime() {
     var timeInterval = setInterval(function() {
         timer.innerText = count
         count--;
-        if (count <-1) {
+        if (count <1) {
             quizQuestions.textContent = ("times up!!")
             clearInterval(timeInterval)
             endgame()
