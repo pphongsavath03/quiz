@@ -39,7 +39,7 @@ var questions = [{
     },
     {
         title: "Question 5:  A very useful tool used during development and debugging for printing content to the debugger is:",
-        choices: ["A: javaScript", "B: terminal/bash", "C: alerts", "D: console.log"],
+        choices: ["A: javaScript", "B: terminal/bash", "C: alerts", "D: console"],
         answer: "D: console.log"
     },
 ]
@@ -75,7 +75,7 @@ function gametime() {
     var timeInterval = setInterval(function() {
         timer.innerText = count
         count--;
-        if (count === -1) {
+        if (count <= 0) {
             quizQuestions.textContent = ("times up!!")
             clearInterval(timeInterval)
             endgame()
@@ -97,7 +97,7 @@ function scorePage(a, b) {
     location.href = "highscore.html";
 }
 
-// display questions and answers
+  // display questions and answers
 
 function displayQuestion(question) {
     titleitem.innerText = question.title
