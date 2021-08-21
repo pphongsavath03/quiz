@@ -19,7 +19,7 @@ var allScores = [];
 var storedScores = JSON.parse(localStorage.getItem("userData"));
 var questions = [{
         title: "Question 1:  Commonly used data type Do Not include:",
-        choices: ["A: strings", "B: booleance", "C: alerts", "D: numbers"],
+        choices: ["A: strings", "B: boolean", "C: alerts", "D: numbers"],
         answer: "C: alerts"
     },
     {
